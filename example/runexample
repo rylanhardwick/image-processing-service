@@ -1,0 +1,3 @@
+#!/bin/bash
+echo make sure classify.py is running.  requires curl and jq
+curl -s -X POST   -F "file=@Truck_with_trailer.jpg"   http://localhost:5000/process |jq .
